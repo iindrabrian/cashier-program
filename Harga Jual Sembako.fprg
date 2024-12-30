@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PERSONAL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-21 09:40:26 AM"/>
+        <attribute name="created" value="UEVSU09OQUw7REVTS1RPUC0xUkREMkU1OzIwMjQtMDMtMjE7MDk6MjU6NTYgQU07MjkwNA=="/>
+        <attribute name="edited" value="UEVSU09OQUw7REVTS1RPUC0xUkREMkU1OzIwMjQtMDMtMjE7MDk6NDA6MjYgQU07MTszMDA2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="hbBeras, hbGula, hbMinyak, uBeras, uGula, uMinyak, hjBeras, hjGula, hjMinyak" type="Integer" array="False" size=""/>
+            <declare name="laba" type="Real" array="False" size=""/>
+            <assign variable="hbBeras" expression="20000"/>
+            <assign variable="hbGula" expression="19000"/>
+            <assign variable="hbMinyak" expression="18000"/>
+            <assign variable="laba" expression="0.05"/>
+            <assign variable="uBeras" expression="hbBeras * laba"/>
+            <assign variable="uGula" expression="hbGula * laba"/>
+            <assign variable="uMinyak" expression="hbMinyak * laba"/>
+            <assign variable="hjBeras" expression="hbBeras + uBeras"/>
+            <assign variable="hjGula" expression="hbGula * laba"/>
+            <assign variable="hjMinyak" expression="hbMinyak + uMinyak"/>
+            <output expression="hjBeras" newline="True"/>
+            <output expression="hjGula" newline="True"/>
+            <output expression="hjMinyak" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
